@@ -1,0 +1,56 @@
+hr {
+  content : '•';
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#header_logo img{
+  width: 100px;
+  height: 40px;
+}
+
+#total_accueil{
+  background-image: url(img/test2.jpg);
+}
+
+#page {
+  background-color: #23232B;
+}
+
+#savoir_plus svg {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  background: #23232B;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 500px;
+  margin-right: 10px;
+  background: #040504;
+  counter-increment: gallery-cell;
+    & img {
+      width: 100%;
+    }
+}
+
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Site AltisFR | Serveur Arma RP francophone",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss/main.scss css/style.css"
+  },
+  "author": "Marius Falone",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
