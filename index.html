@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid" id="total_accueil">
+            <header>
+                <nav class="navbar">
+                    <div class="navbar-brand" id="header_logo">
+                        <a href="#total_accueil"><img src="img/Logo_etoile_AltisFR.png" alt="Logo AltisFR"></a>
+                    </div>
+                    <div class="justify-content-end" id="header_nav">
+                        <a class="navbar-item btn btn-outline-secondary mx-1" href="#total_accueil">Accueil</a>
+                        <a class="navbar-item btn btn-outline-secondary mx-1" target="_blank" href="forum/">Forum</a>
+                        <a class="navbar-item btn btn-danger mx-1" href="nous-rejoindre/index.html" id="nous_rejoindre">Nous rejoindre</a>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="container-fluid" id="accueil">
+                <div class="d-flex justify-content-center">
+                    <img src="img/logo_altisfr.png" alt="Logo AltisFR">
+                </div>
+                <div class="d-flex flex-row justify-content-center">
+                    <a href="nous-rejoindre/index.html" class="btn btn-danger mx-2">REJOINDRE NOTRE SERVEUR</a>
+                    <a href="https://discord.gg/5mf5Hh" target="_blank" class="btn btn-danger mx-2">NOTRE DISCORD</a>
+                    <a href="" class="btn btn-danger mx-2">NOTRE TEAMSPEAK</a>
+                </div>
+            </div>
+
+            <a href="#votre_vie">
+                <div id="savoir_plus">
+                    <p class="btn d-flex justify-content-center mt-5">EN SAVOIR PLUS</p>
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg>
+                </div>
+            </a>
+        </div>
+
+        <div class="container-fluid" id="page">
+            <div class="container-fluid" id="votre_vie">
+                <hr>
+                <h1>Imaginez votre vie</h1>
+                <div class="gallery js-flickity"
+                     data-flickity-options='{ "wrapAround": true }'>
+                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test"></div>
+                    <div class="gallery-cell"><img src="" alt=""></div>
+                    <div class="gallery-cell"><img src="" alt=""></div>
+                </div>
+                <a href="sp-vie/index.html"><p class="btn btn-dark d-flex justify-content-center mt-5">En savoir plus...</p></a>
+            </div>
+
+            <div class="container-fluid" id="notre-discord">
+                <hr>
+                <div class="d-flex flex-row">
+                    <div class="col-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.</p>
+                    </div>
+                    <div class="col-4">
+                        <img src="img/discord.PNG" alt="Notre Discord">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
