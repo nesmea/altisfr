@@ -2,14 +2,20 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
         <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-        <div class="container-fluid" id="total_accueil">
+        <div class="container-fluid" id="total_accueil" style="background-image: url('img/background_accueil.jpg')">
             <header>
                 <nav class="navbar">
                     <div class="navbar-brand" id="header_logo">
@@ -28,54 +34,115 @@
                     <img src="img/logo_altisfr.png" alt="Logo AltisFR">
                 </div>
                 <div class="d-flex flex-row justify-content-center">
-                    <a href="nous-rejoindre/index.html" class="btn btn-danger mx-2">REJOINDRE NOTRE SERVEUR</a>
-                    <a href="https://discord.gg/5mf5Hh" target="_blank" class="btn btn-danger mx-2">NOTRE DISCORD</a>
-                    <a href="" class="btn btn-danger mx-2">NOTRE TEAMSPEAK</a>
+                    <a href="nous-rejoindre/index.html" class="btn btn-danger mx-2" style="font-family: 'Acme', sans-serif;">REJOINDRE NOTRE SERVEUR</a>
+                    <a href="https://discord.gg/5mf5Hh" target="_blank" class="btn btn-danger mx-2" style="font-family: 'Acme', sans-serif;">NOTRE DISCORD</a>
+                    <a href="" class="btn btn-danger mx-2" style="font-family: 'Acme', sans-serif;">NOTRE TEAMSPEAK</a>
                 </div>
             </div>
 
             <a href="#votre_vie">
-                <div id="savoir_plus">
-                    <p class="btn d-flex justify-content-center mt-5">EN SAVOIR PLUS</p>
-                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <div class="mt-5" id="savoir_plus">
+                    <p class="btn d-flex justify-content-center my-0 pb-3" style="font-family: 'Acme', sans-serif;"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                    </svg>
+                    </svg> EN SAVOIR PLUS
+                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill ml-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                    </svg></p>
                 </div>
             </a>
         </div>
 
         <div class="container-fluid" id="page">
             <div class="container-fluid" id="votre_vie">
-                <hr>
-                <h1>Imaginez votre vie</h1>
-                <div class="gallery js-flickity"
+                <p class="h1 d-flex justify-content-center pt-5" style="color: white; font-family: 'Sansita Swashed', cursive; font-size:50px;">Imaginez votre vie</p>
+                <div class="gallery js-flickity mt-5"
                      data-flickity-options='{ "wrapAround": true }'>
                     <div class="gallery-cell"><img src="img/test2.jpg" alt="test"></div>
                     <div class="gallery-cell"><img src="" alt=""></div>
                     <div class="gallery-cell"><img src="" alt=""></div>
                 </div>
-                <a href="sp-vie/index.html"><p class="btn btn-dark d-flex justify-content-center mt-5">En savoir plus...</p></a>
+                <a class="d-flex justify-content-center" href="sp-vie/index.html"><p class="btn btn-info d-flex justify-content-center" style="font-family: 'Acme', sans-serif; position: absolute; margin: -50px 0 0 0;">En savoir plus...</p></a>
             </div>
 
-            <div class="container-fluid" id="notre-discord">
-                <hr>
-                <div class="d-flex flex-row">
-                    <div class="col-8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore
-                            magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                            non proident, sunt in culpa qui officia deserunt mollit
-                            anim id est laborum.</p>
+            <hr style="background-color: white; height: 5px; width: 60%; margin-top: 80px;">
+
+            <div class="container" id="notre-discord">
+                <p class="h1 d-flex justify-content-center pt-2" style="color: white; font-family: 'Sansita Swashed', cursive; font-size:50px;">Notre Discord</p>
+                <div class="d-flex flex-row mt-5">
+                    <div class="d-flex flex-column col-9 mt-3" style="text-align: justify; color: white">
+                        <p>• La première partie de notre Discord est dédié aux nouveaux arrivants.</p>
+                        <p>• Vous trouverez un onglet servant à vous montrer qui vient d'arriver sur le serveur;</p>
+                        <p>• Et un autre onglet servant à venir en aide aux nouveaux arrivants.</p>
                     </div>
-                    <div class="col-4">
-                        <img src="img/discord.PNG" alt="Notre Discord">
+
+                    <div class="d-flex col-3">
+                        <img src="img/discord1.PNG" alt="Première partie de notre discord" style="object-fit: contain">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex flex-row mt-5">
+                    <div class="d-flex col-5">
+                        <img src="img/discord2.PNG" alt="Seconde partie de notre discord" style="object-fit: contain">
+                    </div>
+
+                    <div class="d-flex flex-column col-7" style="text-align: justify; color: white">
+                        <p>• La seconde partie est dédié aux informations diverses et variées du serveur.</p>
+                        <p>• L'onglet "Informations" regroupe [...]</p>
+                        <p>• L'onglet "news" contient [...]</p>
+                        <p>• Et pour finir cette partie, l'onglet "devblog" contenant les informations et nouveautés concernant le développement du serveur.</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex flex-row mt-5">
+                    <div class="d-flex flex-column col-9 mt-3" style="text-align: justify; color: white">
+                        <p>• Pour finir avec la troisième partie, cette dernière regroupe des onglets concernants tous la vie du serveur, c'est-à-dire :</p>
+                        <p>• L'onglet "votes communautaires", afin de vous tenir au courant sur [...].</p>
+                        <p>• Un onglet "concours", pour que vous puissiez savoir quand auront lieu les différents concours qui seront organisés sur AltisFR.</p>
+                        <p>• Un troisième onglet, "events", regroupant toutes les informations concernant les évenements qui seront lancés sur le serveur.</p>
+                        <p>• Puis, un dernier onglet : "top serveurs", ici [...].</p>
+                    </div>
+
+                    <div class="d-flex col-3">
+                        <img src="img/discord3.PNG" alt="Toisième partie de notre discord" style="object-fit: contain">
                     </div>
                 </div>
             </div>
+
+            <hr style="background-color: white; height: 5px; width: 60%; margin-top: 80px;">
+
+            <div class="container-fluid pb-5">
+                <p class="h1 d-flex justify-content-center pt-2" style="color: white; font-family: 'Sansita Swashed', cursive; font-size:50px;">Notre équipe</p>
+                <div class="carousel" data-flickity>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                    <div class="carousel-cell"></div>
+                </div>
+            </div>
         </div>
+
+        <footer class="footer" style="background-color: #17171c;">
+            <div class="container-fluid pt-3">
+                <div class="d-flex flex-row">
+                    <div class="col-6 d-flex justify-content-start pt-2">
+                        <p style="color: white; font-family: 'Acme', sans-serif;">Copyright &copy; AltisFR | Serveur ARMA3 Francophone</p>
+                    </div>
+
+                    <!--
+                    <div class="col-4 d-flex justify-content-center">
+                        <p style="color: white; font-family: 'Acme', sans-serif;">Nos partenaires</p>
+                    </div>
+                      -->
+                    <div class="col-6 d-flex justify-content-end">
+                        <a href=""><p class="btn btn-dark" style="font-family: 'Acme', sans-serif;">Nous contacter</p></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

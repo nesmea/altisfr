@@ -9,6 +9,7 @@
   "author": "Marius Falone",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "flickity": "^2.2.1"
   }
 }
