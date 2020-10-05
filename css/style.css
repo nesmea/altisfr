@@ -27,7 +27,6 @@ body {
 .gallery {
   background: #23232B;
 }
-
 .gallery-cell {
   width: 66%;
   height: 500px;
@@ -38,7 +37,6 @@ body {
 .gallery-cell img {
   width: 100%;
 }
-
 .gallery-cell:before {
   display: block;
   text-align: center;
@@ -50,23 +48,38 @@ body {
 .carousel {
   background: #23232B;
 }
-
 .carousel-cell {
-  width: 50%;
+  width: 30em;
   height: 200px;
   margin-right: 10px;
-  background: #3838a0;
+  background: #7171d7;
   border-radius: 5px;
-  counter-increment: gallery-cell;
+  justify-content: center;
 }
-
 .carousel-cell:before {
   display: block;
   text-align: center;
-  content: counter(gallery-cell);
   line-height: 200px;
   font-size: 80px;
   color: #23232B;
+}
+.carousel-cell img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 0 0 81px;
+  border: 5px outset white;
+}
+.carousel-cell h4 {
+  font-weight: bolder;
+  color: #ffffff;
+}
+.carousel-cell p {
+  color: #ac0d0d;
+  font-weight: bolder;
+  width: 100%;
+  height: 35px;
+  background-color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
