@@ -4,7 +4,9 @@
   "description": "Site AltisFR | Serveur Arma RP francophone",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch scss/main.scss css/style.css"
+    "sass": "sass --watch scss/main.scss css/style.css",
+    "sass-sp-vie": "sass --watch sp-vie/sass/sp-vie-style.scss sp-vie/css/sp-vie-style.css",
+    "sass-nous-rejoindre": "sass --watch nous-rejoindre/sass/nous-rejoindre-style.scss nous-rejoindre/css/style.css"
   },
   "author": "Marius Falone",
   "license": "ISC",

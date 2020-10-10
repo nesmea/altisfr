@@ -8,10 +8,6 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"type="text/javascript"></script>
 
-        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-
-
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
         <link rel="stylesheet" href="css/style.css">
@@ -31,7 +27,7 @@
                     <div class="justify-content-end" id="header_nav">
                         <a class="navbar-item btn btn-outline-secondary mx-1" href="#total_accueil">Accueil</a>
                         <a class="navbar-item btn btn-outline-secondary mx-1" target="_blank" href="forum/">Forum</a>
-                        <a class="navbar-item btn btn-danger mx-1" href="nous-rejoindre/index.html" id="nous_rejoindre">Nous rejoindre</a>
+                        <a class="navbar-item btn btn-danger mx-1" href="nous-rejoindre/index.html">Nous rejoindre</a>
                     </div>
                 </nav>
             </header>
@@ -40,155 +36,155 @@
                 <div class="d-flex justify-content-center">
                     <img src="img/logo_altisfr.png" alt="Logo AltisFR">
                 </div>
-                <div class="d-flex flex-row justify-content-center">
-                    <a href="nous-rejoindre/index.html" class="btn btn-danger mx-2" style="font-family: 'Acme', sans-serif;">REJOINDRE NOTRE SERVEUR</a>
-                    <a href="https://discord.gg/5mf5Hh" target="_blank" class="btn btn-danger mx-2" style="font-family: 'Acme', sans-serif;">NOTRE DISCORD</a>
-                    <a href="ts3server://ts.altisfr.fr/" class="btn btn-danger mx-2" style="font-family: 'Acme', sans-serif;">NOTRE TEAMSPEAK</a>
+                <div class="d-flex flex-row justify-content-center" id="bouton_front">
+                    <a href="nous-rejoindre/index.html" class="btn btn-danger mx-2">REJOINDRE NOTRE SERVEUR</a>
+                    <a href="https://discord.gg/5mf5Hh" target="_blank" class="btn btn-danger mx-2">NOTRE DISCORD</a>
+                    <a href="ts3server://ts.altisfr.fr/" class="btn btn-danger mx-2">NOTRE TEAMSPEAK</a>
                 </div>
             </div>
 
-            <a href="#votre_vie">
-                <div class="mt-5" id="savoir_plus">
-                    <p class="btn d-flex justify-content-center my-0 pb-3" style="font-family: 'Acme', sans-serif;"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                    </svg> EN SAVOIR PLUS
-                    <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill ml-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                    </svg></p>
-                </div>
-            </a>
+            <div id="savoir_plus">
+                <a href="#votre_vie">
+                    <div class="mt-5">
+                        <p class="btn d-flex justify-content-center my-0 pb-3"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg> EN SAVOIR PLUS
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-down-circle-fill ml-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></p>
+                    </div>
+                </a>
+            </div>
         </div>
 
         <div class="container-fluid" id="page">
             <div class="container-fluid pb-4" id="votre_vie">
-                <p class="h1 d-flex justify-content-center pt-5" style="color: white; font-family: 'Sansita Swashed', cursive; font-size:50px;">Imaginez votre vie</p>
+                <p class="h1 d-flex justify-content-center pt-5">Imaginez votre vie</p>
                 <div class="gallery js-flickity mt-5"
                      data-flickity-options='{ "wrapAround": true }'>
-                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test" style="object-fit: cover"></div>
-                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test" style="object-fit: cover"></div>
-                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test" style="object-fit: cover"></div>
+                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test"></div>
+                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test"></div>
+                    <div class="gallery-cell"><img src="img/test2.jpg" alt="test"></div>
                 </div>
-                <a class="d-flex justify-content-center" href="sp-vie/index.html"><p class="btn btn-info d-flex justify-content-center" style="font-family: 'Acme', sans-serif; position: absolute; margin: -50px 0 0 0;">En savoir plus...</p></a>
+                <a class="d-flex justify-content-center" href="sp-vie/index.html" id="btn-votre_vie"><p class="btn btn-info d-flex justify-content-center">A propos des métiers...</p></a>
             </div>
 
-            <div class="row my-5" style="height: 200px; background-image: url(img/background_accueil.jpg); background-attachment: fixed;"></div>
+            <div class="row my-5 first_sepa_background"></div>
 
             <div class="container" id="notre-discord">
-                <p class="h1 d-flex justify-content-center pt-2" style="color: white; font-family: 'Sansita Swashed', cursive; font-size:50px;">Notre Discord</p>
-                <div class="d-flex flex-row mt-5">
-                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3" style="text-align: justify; color: white">
-                        <p>• <span style="font-size: 30px;font-weight: bolder; color: #b1484b">L</span>a première partie est dédié aux informations du serveur, vous y trouverez :</p>
-                        <p>- <span style="font-weight: bolder">L</span>'onglet "Informations" qui contient les informations diverses concernant AltisFR que notre équipe décide de vous faire savoir.</p>
-                        <p>- <span style="font-weight: bolder">L</span>'onglet "news" comprend les messages contenant toutes les nouveautés "générales" du serveur.</p>
-                        <p>- <span style="font-weight: bolder">E</span>t pour finir cette partie, l'onglet "devblog" contenant les informations concernant le développement du serveur.</p>
+                <p class="h1 d-flex justify-content-center pt-2">Notre Discord</p>
+                <div class="d-flex flex-row flex-wrap mt-5 contn-discord">
+                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3 discord-text">
+                        <p>• <span class="first-span">L</span>a première partie est dédié aux informations du serveur, vous y trouverez :</p>
+                        <p>- <span class="other-span">L</span>'onglet "Informations" qui contient les informations diverses concernant AltisFR que notre équipe décide de vous faire savoir.</p>
+                        <p>- <span class="other-span">L</span>'onglet "news" comprend les messages contenant toutes les nouveautés "générales" du serveur.</p>
+                        <p>- <span class="other-span">E</span>t pour finir cette partie, l'onglet "devblog" contenant les informations concernant le développement du serveur.</p>
                     </div>
 
-                    <div class="d-flex col-lg-3 col-md-4 col-sm-6">
-                        <img src="img/discord_informations.PNG" alt="Première partie de notre discord" style="object-fit: contain">
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="d-flex flex-row mt-5">
-                    <div class="d-flex col-lg-3 col-md-4 col-sm-6">
-                        <img src="img/discord_vie.PNG" alt="Seconde partie de notre discord" style="object-fit: contain">
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3" style="text-align: justify; color: white">
-                        <p>• <span style="font-size: 30px;font-weight: bolder; color: #b1484b">L</span>a deuxième partie, cette dernière regroupe des onglets concernants tous la vie du serveur, c'est-à-dire :</p>
-                        <p>- <span style="font-weight: bolder">U</span>n troisième onglet, "events", regroupant toutes les informations concernant les évenements qui seront lancés sur le serveur.</p>
-                        <p>- <span style="font-weight: bolder">U</span>n onglet "concours", pour que vous puissiez savoir quand auront lieu les différents concours qui seront organisés sur AltisFR.</p>
-                        <p>- <span style="font-weight: bolder">L</span>'onglet "votes communautaires", afin de vous permettre de participer avec "Pour" ou "Contre" sur des débats lancés par le staff.</p>
-                        <p>- <span style="font-weight: bolder">P</span>uis, un dernier onglet : "top serveurs", ici vous pourrez y trouver la page Top Serveurs d'AltisFR afin de voter pour notre serveur.</p>
+                    <div class="d-flex col-lg-3 col-md-4 col-sm-6 discord-img">
+                        <img src="img/discord_informations.PNG" alt="Première partie de notre discord">
                     </div>
                 </div>
 
                 <hr>
 
-                <div class="d-flex flex-row mt-5">
-                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3" style="text-align: justify; color: white">
-                        <p>• <span style="font-size: 30px;font-weight: bolder; color: #b1484b">L</span>a troisième partie sert à la communauté.</p>
-                        <p>- <span style="font-weight: bolder">V</span>ous y retrouverez un onglet "discussions", afin de pouvoir échanger avec tous les membres de la communauté d'AltisFR.</p>
-                        <p>- <span style="font-weight: bolder">U</span>n onglet "vos photos", afin de pouvoir y poster et partager vos différentes photos de l'île avec les autres joueurs.</p>
-                        <p>- <span style="font-weight: bolder">E</span>nfin, un onglet "vos vidéos", dans le même but que l'onglet précédent mais ici pour y partager vos vidéos du serveur.</p>
+                <div class="d-flex flex-row flex-wrap mt-5 contn-discord">
+                    <div class="d-flex col-lg-3 col-md-4 col-sm-6 discord-img">
+                        <img src="img/discord_vie.PNG" alt="Seconde partie de notre discord">
                     </div>
 
-                    <div class="d-flex col-lg-3 col-md-4 col-sm-6">
-                        <img src="img/discord_communaute.PNG" alt="Toisième partie de notre discord" style="object-fit: contain">
+                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3 discord-text">
+                        <p>• <span class="first-span">L</span>a deuxième partie, cette dernière regroupe des onglets concernants tous la vie du serveur, c'est-à-dire :</p>
+                        <p>- <span class="other-span">U</span>n troisième onglet, "events", regroupant toutes les informations concernant les évenements qui seront lancés sur le serveur.</p>
+                        <p>- <span class="other-span">U</span>n onglet "concours", pour que vous puissiez savoir quand auront lieu les différents concours qui seront organisés sur AltisFR.</p>
+                        <p>- <span class="other-span">L</span>'onglet "votes communautaires", afin de vous permettre de participer avec "Pour" ou "Contre" sur des débats lancés par le staff.</p>
+                        <p>- <span class="other-span">P</span>uis, un dernier onglet : "top serveurs", ici vous pourrez y trouver la page Top Serveurs d'AltisFR afin de voter pour notre serveur.</p>
                     </div>
                 </div>
 
                 <hr>
 
-                <div class="d-flex flex-row mt-5">
-                    <div class="d-flex col-lg-3 col-md-4 col-sm-6">
-                        <img src="img/discord_support.PNG" alt="Toisième partie de notre discord" style="object-fit: contain">
+                <div class="d-flex flex-row flex-wrap mt-5 contn-discord">
+                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3 discord-text">
+                        <p>• <span class="first-span">L</span>a troisième partie sert à la communauté.</p>
+                        <p>- <span class="other-span">V</span>ous y retrouverez un onglet "discussions", afin de pouvoir échanger avec tous les membres de la communauté d'AltisFR.</p>
+                        <p>- <span class="other-span">U</span>n onglet "vos photos", afin de pouvoir y poster et partager vos différentes photos de l'île avec les autres joueurs.</p>
+                        <p>- <span class="other-span">E</span>nfin, un onglet "vos vidéos", dans le même but que l'onglet précédent mais ici pour y partager vos vidéos du serveur.</p>
                     </div>
 
-                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3" style="text-align: justify; color: white">
-                        <p>• <span style="font-size: 30px;font-weight: bolder; color: #b1484b">P</span>our finir avec la quatrième partie, cette dernière regroupe des onglets concernants toutes vos questions, ce qui se résume par :</p>
-                        <p>- <span style="font-weight: bolder">L</span>'onglet "debats", afin de vous laisser l'opportunité de lancer des sujets de débats sur le serveur en général avec les autres membres de la communauté.</p>
-                        <p>- <span style="font-weight: bolder">U</span>n onglet "entraides", pour que vous puissiez aider ou vous faire aider par d'autres joueurs.</p>
-                        <p>- <span style="font-weight: bolder">E</span>t pour finir, l'onglet "ouvrir ticket" vous permettant de faire appel au staff à l'aide d'un ticket si vous n'arrivez pas à résoudre votre problème ou qu'une de vos questions reste sans réponse.</p>
+                    <div class="d-flex col-lg-3 col-md-4 col-sm-6 discord-img">
+                        <img src="img/discord_communaute.PNG" alt="Toisième partie de notre discord">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="d-flex flex-row flex-wrap mt-5 contn-discord">
+                    <div class="d-flex col-lg-3 col-md-4 col-sm-6 discord-img">
+                        <img src="img/discord_support.PNG" alt="Toisième partie de notre discord">
+                    </div>
+
+                    <div class="d-flex flex-column col-lg-9 col-md-7 col-sm-6 mt-3 discord-text">
+                        <p>• <span class="first-span">P</span>our finir avec la quatrième partie, cette dernière regroupe des onglets concernants toutes vos questions, ce qui se résume par :</p>
+                        <p>- <span class="other-span">L</span>'onglet "debats", afin de vous laisser l'opportunité de lancer des sujets de débats sur le serveur en général avec les autres membres de la communauté.</p>
+                        <p>- <span class="other-span">U</span>n onglet "entraides", pour que vous puissiez aider ou vous faire aider par d'autres joueurs.</p>
+                        <p>- <span class="other-span">E</span>t pour finir, l'onglet "ouvrir ticket" vous permettant de faire appel au staff à l'aide d'un ticket si vous n'arrivez pas à résoudre votre problème ou qu'une de vos questions reste sans réponse.</p>
                     </div>
                 </div>
             </div>
 
-            <!--
-            <hr style="background-color: white; height: 5px; width: 60%; margin-top: 80px;">
-            -->
-            <div class="row my-5" style="height: 200px; background-image: url(img/background_accueil.jpg); background-attachment: fixed;"></div>
+            <div class="row my-5 second-sepa-background"></div>
 
-            <div class="container-fluid pb-5">
-                <p class="h1 d-flex justify-content-center pt-2" style="color: white; font-family: 'Sansita Swashed', cursive; font-size:50px;">Notre équipe</p>
+            <div class="container-fluid pb-5" id="notre-equipe">
+                <p class="h1 d-flex justify-content-center pt-2">Notre équipe</p>
                 <div class="carousel" data-flickity>
-                    <div class="d-flex flex-column carousel-cell" style="width: 23em; height: 20em">
+                    <section class="d-flex flex-column carousel-cell cell">
                         <div class="d-flex"><img src="img/test_id.png" alt="test id"></div>
-                        <div class="d-flex flex-column mt-3" style="text-align: center">
+                        <div class="d-flex flex-column mt-3 text-center">
                             <h4>Lewis Parker</h4>
                             <p class="pt-1">Fondateur</p>
                         </div>
-                    </div>
-                    <div class="d-flex flex-column carousel-cell" style="width: 23em; height: 20em">
+                    </section>
+                    <section class="d-flex flex-column carousel-cell cell">
                         <div class="d-flex"><img src="img/test_id.png" alt="test id"></div>
-                        <div class="d-flex flex-column mt-3" style="text-align: center">
+                        <div class="d-flex flex-column mt-3 text-center">
                             <h4>Marius Falone</h4>
                             <p class="pt-1">Développeur web</p>
                         </div>
-                    </div>
-                    <div class="d-flex flex-column carousel-cell" style="width: 23em; height: 20em">
+                    </section>
+                    <section class="d-flex flex-column carousel-cell cell">
                         <div class="d-flex"><img src="img/test_id.png" alt="test id"></div>
-                        <div class="d-flex flex-column mt-3" style="text-align: center">
+                        <div class="d-flex flex-column mt-3 text-center">
                             <h4>...</h4>
                             <p class="pt-1">...</p>
                         </div>
-                    </div>
-                    <div class="d-flex flex-column carousel-cell" style="width: 23em; height: 20em">
+                    </section>
+                    <section class="d-flex flex-column carousel-cell cell">
                         <div class="d-flex"><img src="img/test_id.png" alt="test id"></div>
-                        <div class="d-flex flex-column mt-3" style="text-align: center">
+                        <div class="d-flex flex-column mt-3 text-center">
                             <h4>...</h4>
                             <p class="pt-1">...</p>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>
 
-        <footer class="footer" style="background-color: #17171c;">
+        <footer class="footer">
             <div class="container-fluid pt-3">
                 <div class="d-flex flex-row">
-                    <div class="col-6 d-flex justify-content-start pt-2">
-                        <p style="color: white; font-family: 'Acme', sans-serif;">Copyright &copy; AltisFR | Serveur ARMA3 Francophone</p>
+                    <div class="col-6 d-flex justify-content-start pt-2 flex-wrap">
+                        <p>Copyright &copy; AltisFR | Serveur ARMA3 Francophone</p>
                     </div>
 
-                    <!--
+                    <!-- NOS PARTENAIRES /////////
+
                     <div class="col-4 d-flex justify-content-center">
                         <p style="color: white; font-family: 'Acme', sans-serif;">Nos partenaires</p>
                     </div>
                       -->
-                    <div class="col-6 d-flex justify-content-end">
-                        <a href=""><p class="btn btn-dark" style="font-family: 'Acme', sans-serif;">Nous contacter</p></a>
+                    <div class="col-6 d-flex justify-content-end flex-wrap">
+                        <a href=""><p class="btn btn-dark">Nous contacter</p></a>
                         <a href="#total_accueil" class="btn" id="bouton_retour_top"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill pb-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                         </svg></a>

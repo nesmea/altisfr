@@ -7,16 +7,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-
-        <link rel="stylesheet" href="../nous-rejoindre/css/style.css">
+        <link rel="stylesheet" href="../sp-vie/css/sp-vie-style.css">
         <title>AltisFR | Votre vie</title>
         <link rel="icon" type="image/png" href="../img/favicon.png">
     </head>
 
     <body>
-        <div class="container-fluid" id="page_total" style="background-color: #23232B; height: 100%; width: 100%;">
+        <div class="container-fluid" id="page_total">
             <header>
                 <nav class="navbar">
                     <div class="navbar-brand" id="header_logo">
@@ -30,66 +27,62 @@
                 </nav>
             </header>
 
-            <hr class="mb-3 mt-5" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); height: 2px;">
-            <div>
-                <h1 style="color: white;text-align: center; font-family: 'Acme', sans-serif;">Que faire sur<br/><span style="font-size:100px;color: #1f2c99">Al</span><span style="font-size:100px;color: #ffffff">tis</span><span style="font-size:100px;color: #9a4a4a">FR</span></h1>
+            <hr class="mb-3 mt-5">
+            <div id="en-tete">
+                <h1 id="h1_custom">Que faire sur<br/><span id="span-al">Al</span><span id="span-tis">tis</span><span id="span-fr">FR</span></h1>
             </div>
-            <hr class="mb-5" style="background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); height: 2px;">
+            <hr class="mb-5">
 
-            <h2 class="pb-2" style="font-family: 'Acme', sans-serif;text-align: center; color: white">La vie sur le serveur est variée, et tu peux facilement choisir un RôlePlay qui te correspond à 100% !</h2>
+            <h2 class="pb-2 h2_descript">La vie sur le serveur est variée, et tu peux facilement choisir un RôlePlay qui te correspond à 100% !</h2>
 
             <div class="row my-5" style="height: 300px; background-image: url(../img/background_accueil.jpg); background-attachment: fixed;"></div>
 
-            <h2 class="pb-5" style="font-size: 50px;text-align: center; color: white; font-family: 'Sansita Swashed', cursive">Dans le civil</h2>
+            <h2 class="pb-5 title_civil_part">Dans le civil</h2>
             <div class="d-flex flex-row justify-content-center pb-4">
-                <div class="d-flex flex-column col-5">
-                    <h2 style="font-family: 'Acme', sans-serif; color: white; text-align: center">Légal</h2>
+                <div class="d-flex flex-column col-5 legal_part">
+                    <h2>Légal</h2>
 
-                    <!--
-                    Ici mettre une image de civil
-                    -->
-
-                    <h3 style="color: white;" class="mt-5"><span style="color:#3aabcd">Chef d'entreprise</span></h3>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <h3 class="mt-5">Chef d'entreprise</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <h3 style="color: white;" class="mt-5"><span style="color:#3aabcd">Employé</span></h3>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <h3 class="mt-5">Employé</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <h3 style="color: white;" class="mt-5"><span style="color:#3aabcd">Intérimaire</span></h3>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <h3 class="mt-5">Intérimaire</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
                 </div>
 
-                <div class="d-flex justify-content-center col-2">
-                    <div style="width:2px; height: 100%; background:white"></div>
+                <div class="d-flex justify-content-center col-2 civil_part-sepa">
+                    <div></div>
                 </div>
 
-                <div class="d-flex flex-column col-5">
-                    <h2 style="font-family: 'Acme', sans-serif;color: white; text-align: center">Illégal</h2>
+                <div class="d-flex flex-column col-5 illegal_part">
+                    <h2>Illégal</h2>
 
-                    <h3 style="color: white;" class="mt-5"><span style="color:#cd3a3a">Mafieux</span></h3>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <h3 class="mt-5">Mafieux</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <h3 style="color: white;" class="mt-5"><span style="color:#cd3a3a">Marchand d'armes</span></h3>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <h3 class="mt-5">Marchand d'armes</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                    <h3 style="color: white;" class="mt-5"><span style="color:#cd3a3a">Dealeur</span></h3>
-                    <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    <h3 class="mt-5">Dealeur</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -98,35 +91,35 @@
 
             <div class="row my-5" style="height: 300px; background-image: url(../img/background_accueil.jpg); background-attachment: fixed;"></div>
 
-            <h2 class="pb-5" style="font-size: 50px;text-align: center; color: white; font-family: 'Sansita Swashed', cursive">Forces de l'ordre</h2>
+            <h2 class="pb-5 title_blufor_part">Forces de l'ordre</h2>
 
-            <div class="container-fluid">
-                <h3 class="pb-3 mt-4" style="color: white; text-align: center; font-family: 'Acme', sans-serif">Sur AltisFR, les forces de l'ordre sont des <span style="color:#3aabcd">Sheriffs</span></h3>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            <div class="container-fluid sheriff_part">
+                <h3 class="pb-3 mt-4">Sur AltisFR, les forces de l'ordre sont des <span>Sheriffs</span></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
-            <div class="container-fluid">
-                <h3 class="pb-3 mt-5" style="color: white; text-align: center; font-family: 'Acme', sans-serif">Pour les plus experimentés, <span style="color:#cd3a3a">l'Unité SERT</span> est là pour remplir des missions périlleuses</h3>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            <div class="container-fluid sert_part">
+                <h3 class="pb-3 mt-5">Pour les plus experimentés, <span>l'Unité SERT</span> est là pour remplir des missions périlleuses</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -135,30 +128,30 @@
 
             <div class="row my-5" style="height: 300px; background-image: url(../img/background_accueil.jpg); background-attachment: fixed;"></div>
 
-            <h2 class="pb-5" style="font-size: 50px;text-align: center; color: white; font-family: 'Sansita Swashed', cursive">Pompiers</h2>
+            <h2 class="pb-5 title_pompier_part">Pompiers</h2>
 
-            <div class="container-fluid pb-5">
-                <h3 class="pb-3 mt-4" style="color: white; text-align: center; font-family: 'Acme', sans-serif">Si venir en aide aux autres est une priorité pour vous, intégrer <span style="color:#cd3a3a">la Caserne de Pompiers d'AltisFR</span> sera sûrement votre meilleur objectif</h3>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            <div class="container-fluid pb-5 pompier_part">
+                <h3 class="pb-3 mt-4">Si venir en aide aux autres est une priorité pour vous, intégrer <span>la Caserne de Pompiers d'AltisFR</span> sera sûrement votre meilleur objectif</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                <p style="color: white; text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
                     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                     sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
 
-        <footer class="footer" style="background-color: #17171c;">
+        <footer class="footer">
             <div class="container-fluid pt-3">
                 <div class="d-flex flex-row">
-                    <div class="col-6 d-flex justify-content-start pt-2">
-                        <p style="color: white; font-family: 'Acme', sans-serif;">Copyright &copy; AltisFR | Serveur ARMA3 Francophone</p>
+                    <div class="col-6 d-flex flex-wrap justify-content-start pt-2">
+                        <p>Copyright &copy; AltisFR | Serveur ARMA3 Francophone</p>
                     </div>
 
                     <!--
@@ -166,8 +159,8 @@
                         <p style="color: white; font-family: 'Acme', sans-serif;">Nos partenaires</p>
                     </div>
                       -->
-                    <div class="col-6 d-flex justify-content-end">
-                        <a href=""><p class="btn btn-dark" style="font-family: 'Acme', sans-serif;">Nous contacter</p></a>
+                    <div class="col-6 d-flex flex-wrap justify-content-end">
+                        <a href=""><p class="btn btn-dark">Nous contacter</p></a>
                         <a href="#total_accueil" class="btn" id="bouton_retour_top"><svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-up-circle-fill pb-2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
                         </svg></a>

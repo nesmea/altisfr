@@ -1,3 +1,5 @@
+@import '../scss/fonts.scss';
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,13 +17,24 @@ body {
   height: 40px;
 }
 
-#page {
-  background-color: #23232B;
+.navbar {
+  @media (max-width: 435px){
+    justify-content: center;
+  }
+  & #header_nav {
+    & a {
+      @media all and (max-width: 490px) {
+        font-size: 11px;
+      }
+    }
+    & a:hover {
+      box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
 
-#savoir_plus svg {
-  display: flex;
-  justify-content: center;
+#page {
+  background-color: #23232B;
 }
 
 .gallery {
@@ -35,6 +48,7 @@ body {
 
       & img {
         width: 100%;
+        object-fit: cover;
       }
 
       &:before {
@@ -44,14 +58,36 @@ body {
         font-size: 80px;
         color: white;
       }
+
+      @media (max-width: 1500px) {
+        height: 450px;
+      }
+      @media (max-width: 1300px) {
+        height: 400px;
+      }
+      @media (max-width: 1200px) {
+        height: 350px;
+      }
+      @media (max-width: 1000px) {
+        height: 300px;
+      }
+      @media (max-width: 900px) {
+        height: 250px;
+      }
+      @media (max-width: 800px) {
+        height: 200px;
+      }
+      @media (max-width: 600px) {
+        height: 150px;
+      }
     }
 }
 
 .carousel {
   background: #23232B;
     &-cell {
-      width: 30em;
-      height: 200px;
+      height: 20em;
+      width: 23em;
       margin-right: 10px;
       background: #7171d7;
       border-radius: 5px;
@@ -86,4 +122,135 @@ body {
         background-color: white;
       }
     }
+}
+
+#bouton_front{
+  & a {
+    @media (max-width: 465px) {
+      font-size: 12px;
+    }
+    @media (max-width: 400px) {
+      font-size: 10px;
+    }
+  }
+  & a:hover {
+    box-shadow: 0px 2px 8px 2px rgba(255, 255, 255, 0.25);
+  }
+  & a, p {
+    font-family: "fulbo";
+  }
+}
+
+#savoir_plus {
+  & svg {
+    display: flex;
+    justify-content: center;
+  }
+  & p {
+    font-family: 'fulbo';
+    @media (max-width: 420px) {
+      font-size: 12px;
+    }
+  }
+  & p:hover, a:hover {
+    text-decoration: none;
+    color: #2fb6b6;
+    text-shadow: 3px 2px 2px #0a0808;
+  }
+}
+
+#votre_vie{
+    &  > .h1 {
+      color: white;
+      font-family: "grandhotel";
+      font-size: 80px;
+        @media (max-width: 510px) {
+          font-size: 60px;
+        }
+        @media (max-width: 400px) {
+          font-size: 45px;
+        }
+    }
+    & > #btn-votre_vie p {
+      font-family: "fulbo";
+      position: absolute;
+      margin: -50px 0 0 0;
+    }
+    & .btn-info:hover {
+      box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.42);
+    }
+}
+
+#page {
+    & > .first_sepa_background {
+      height: 200px;
+      background-image: url(../img/background_accueil.jpg);
+      background-attachment: fixed;
+    }
+
+    & > .second-sepa-background {
+      height: 200px;
+      background-image: url(../img/background_accueil.jpg);
+      background-attachment: fixed;
+    }
+}
+
+#notre-discord {
+    & > .h1 {
+      color: white;
+      font-family: "grandhotel";
+      font-size: 80px;
+      @media (max-width: 510px) {
+        font-size: 60px;
+      }
+      @media (max-width: 400px) {
+        font-size: 45px;
+      }
+    }
+
+    & .contn-discord > .discord-text {
+      text-align: justify;
+      color: white
+    }
+
+    & .contn-discord > .discord-img img {
+      object-fit: contain;
+      @media(max-width: 575px) {
+        margin: auto;
+      }
+    }
+
+    & .discord-text > p > .first-span {
+      font-size: 30px;
+      font-weight: bolder;
+      color: #b1484b;
+    }
+
+    & .discord-text > p > .other-span {
+      font-weight: bolder;
+    }
+}
+
+#notre-equipe {
+    & > .h1 {
+      color: white;
+      font-family: "grandhotel";
+      font-size: 80px;
+      margin-bottom: 1em;
+      @media (max-width: 510px) {
+        font-size: 60px;
+      }
+      @media (max-width: 400px) {
+        font-size: 45px;
+      }
+    }
+}
+
+footer {
+  background-color: #17171c;
+
+  & p , a {
+    color: #3d3d3d;
+    font-family: "fulbo";
+  }
 }

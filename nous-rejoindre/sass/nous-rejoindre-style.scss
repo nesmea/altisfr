@@ -1,0 +1,85 @@
+@import '../fonts/fonts.scss';
+
+.navbar {
+  @media (max-width: 435px){
+    justify-content: center;
+  }
+  & #header_logo img{
+    width: 100px;
+    height: 40px;
+  }
+  & #header_nav {
+    & a {
+      @media all and (max-width: 490px) {
+        font-size: 11px;
+      }
+    }
+    & a:hover {
+      box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+#page_total{
+  background-color: #23232B;
+  height: 100%;
+  width: 100%;
+    & > #text_part {
+      & h2 {
+        font-family: "fulbo";
+        color: white;
+        text-align: center;
+      }
+      & p {
+        color: white;
+        text-align: center;
+      }
+    }
+}
+
+hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  height: 2px;
+}
+
+#en-tete {
+  & > #h1_custom {
+    color: white;
+    text-align: center;
+    font-family: "fulbo";
+
+    @media (max-width: 400px) {
+      font-size: 20px;
+    }
+    & > #span-al {
+      font-size:100px;
+      color: #1f2c99;
+      @media (max-width: 400px) {
+        font-size: 60px;
+      }
+    }
+    & > #span-tis {
+      font-size:100px;
+      color: #ffffff;
+      @media (max-width: 400px) {
+        font-size: 60px;
+      }
+    }
+    & > #span-fr {
+      font-size:100px;
+      color: #9a4a4a;
+      @media (max-width: 400px) {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #17171c;
+
+  & p , a {
+    color: #3d3d3d;
+    font-family: "fulbo";
+  }
+}

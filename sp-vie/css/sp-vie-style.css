@@ -39,12 +39,98 @@
   height: 100%;
   width: 100%;
 }
-#page_total > #text_part h2 {
+#page_total .h2_descript {
+  font-family: "fulbo";
+  text-align: center;
+  color: white;
+}
+#page_total .title_civil_part {
+  font-size: 75px;
+  text-align: center;
+  color: white;
+  font-family: "grandhotel";
+}
+#page_total > div > .legal_part h2, #page_total > div > .illegal_part h2 {
   font-family: "fulbo";
   color: white;
   text-align: center;
 }
-#page_total > #text_part p {
+#page_total > div > .legal_part h3 {
+  color: #3aabcd;
+  font-family: "fulbo";
+}
+@media (max-width: 730px) {
+  #page_total > div > .legal_part h3 {
+    font-size: 18px;
+  }
+}
+#page_total > div > .civil_part-sepa > div {
+  width: 2px;
+  height: 100%;
+  background: white;
+}
+#page_total > div > .illegal_part h3 {
+  color: #cd3a3a;
+  font-family: "fulbo";
+}
+@media (max-width: 730px) {
+  #page_total > div > .illegal_part h3 {
+    font-size: 18px;
+  }
+}
+#page_total > div > .legal_part p, #page_total > div > .illegal_part p {
+  color: white;
+}
+@media (max-width: 550px) {
+  #page_total > div > .legal_part p, #page_total > div > .illegal_part p {
+    font-size: 13px;
+  }
+}
+#page_total .title_blufor_part {
+  font-size: 75px;
+  text-align: center;
+  color: white;
+  font-family: "grandhotel";
+}
+#page_total > .sheriff_part > h3 {
+  color: white;
+  text-align: center;
+  font-family: "fulbo";
+}
+#page_total > .sheriff_part > h3 > span {
+  color: #3aabcd;
+}
+#page_total > .sheriff_part > p {
+  color: white;
+  text-align: center;
+}
+#page_total > .sert_part > h3 {
+  color: white;
+  text-align: center;
+  font-family: "fulbo";
+}
+#page_total > .sert_part > h3 > span {
+  color: #cd3a3a;
+}
+#page_total > .sert_part > p {
+  color: white;
+  text-align: center;
+}
+#page_total .title_pompier_part {
+  font-size: 75px;
+  text-align: center;
+  color: white;
+  font-family: "grandhotel";
+}
+#page_total > .pompier_part > h3 {
+  color: white;
+  text-align: center;
+  font-family: "fulbo";
+}
+#page_total > .pompier_part > h3 > span {
+  color: #cd3a3a;
+}
+#page_total > .pompier_part > p {
   color: white;
   text-align: center;
 }
@@ -100,4 +186,4 @@ footer p, footer a {
   font-family: "fulbo";
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=sp-vie-style.css.map */
