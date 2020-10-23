@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "fulbo";
+  src: url("../../../fonts/fulbo/fulbo-premier-webfont.woff2") format("woff2"), url("../../../fonts/fulbo/fulbo-premier-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "productbold";
+  src: url("../../../fonts/google/product_sans_bold-webfont.woff2") format("woff2"), url("../../../fonts/google/product_sans_bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "baloo";
+  src: url("../../../fonts/baloo/baloo-regular-webfont.woff2") format("woff2"), url("../../../fonts/baloo/baloo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+hr {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(168, 168, 168, 0.75), rgba(0, 0, 0, 0));
+  height: 1px;
+  width: 100%;
+}
+
+body {
+  background: url("../../../img/background_gouv.jpg") fixed no-repeat;
+}
+body > header > nav {
+  background: #1174b3;
+}
+body > header > nav > #header_logo > svg {
+  width: 30px;
+  color: white;
+}
+body > header > nav > #header_logo > .sepa-nav {
+  width: 3px;
+  background: white;
+  margin-left: 0.8em;
+}
+body > header > nav > #header_logo > #navbar-title > p {
+  color: white;
+  font-family: "fulbo";
+  font-size: 20px;
+  margin: 0;
+}
+body > header > nav > #header_nav > svg {
+  width: 10px;
+  margin-left: 5px;
+}
+body > header > nav > #header_nav > .sepa-nav {
+  width: 3px;
+  background: white;
+  margin: 0 20px 0 -5px;
+}
+body > header > nav > #header_nav > a.a-nav {
+  text-decoration: none;
+  font-family: "productbold";
+  color: white;
+  margin: 4px 30px 0 0;
+}
+body > header > nav > #header_nav > a.a-nav:hover {
+  color: #0f1c2b;
+}
+body > header > nav > #header_nav > div#contacter.dropdown > a {
+  text-decoration: none;
+  font-family: "productbold";
+  color: white;
+  margin: 4px 30px 0 0;
+}
+body > header > nav > #header_nav > div#contacter.dropdown > a:hover {
+  color: #0f1c2b;
+}
+body > header > nav > #header_nav > a#se-deco {
+  margin: 4px 0 0 15px;
+  text-decoration: none;
+  font-family: "productbold";
+  color: white;
+}
+body > header > nav > #header_nav > a#se-deco:hover {
+  color: #0f1c2b;
+}
+body > header > #border-nav {
+  height: 10px;
+  background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+}
+body > #btn-retour > a > svg {
+  width: 40px;
+  margin: 15px 0 0 20px;
+  color: black;
+}
+body > #btn-retour > a > svg:hover {
+  color: #144766;
+}
+body > #partie-centrale {
+  width: 50%;
+  height: 100%;
+  background: white;
+  border: 5px outset #247fba;
+}
+body > #partie-centrale #statut > #statut_message_ferme {
+  border: #800000 2px solid;
+  background: #800000;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-family: "fulbo";
+  color: white;
+  position: absolute;
+  margin: 45px 0 0px 205px;
+}
+body > #partie-centrale #statut > #statut_message_ouvert {
+  border: #008002 2px solid;
+  background: #008002;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-family: "fulbo";
+  color: white;
+  position: absolute;
+  margin: 45px 0 0px 205px;
+}
+body > #partie-centrale #statut > #statut_message_repondu {
+  border: #af9802 2px solid;
+  background: #af9802;
+  padding: 0.5em;
+  border-radius: 5px;
+  font-family: "fulbo";
+  color: white;
+  position: absolute;
+  margin: 45px 0 0px 205px;
+}
+body > #partie-centrale #coord {
+  justify-content: space-around;
+  margin: auto;
+}
+body > #partie-centrale #coord p#player_name, body > #partie-centrale #coord p#player_phone {
+  font-family: "baloo";
+  color: #0f1c2b;
+  font-size: 25px;
+  margin: 5px 0 0 10px;
+}
+body > #partie-centrale #coord p#title_player_name, body > #partie-centrale #coord p#title_player_phone {
+  font-family: "fulbo";
+  color: #1174b3;
+  font-size: 30px;
+  margin-left: -15px;
+}
+body > #partie-centrale #div_objet p#title_objet_message {
+  font-family: "fulbo";
+  color: #1174b3;
+  font-size: 30px;
+}
+body > #partie-centrale #div_objet span {
+  font-family: "baloo";
+  color: #0f1c2b;
+  font-size: 25px;
+  margin: 5px 0 0 10px;
+}
+body > #partie-centrale form label {
+  font-size: 30px;
+  color: #0f1c2b;
+  font-family: "fulbo";
+}
+body footer {
+  margin-top: 11.95em;
+  background: #020507;
+}
+body footer #contour-footer {
+  height: 0.5em;
+  width: 100%;
+  background: #1174b3;
+}
+body footer > .footer-copyright {
+  color: white;
+  font-family: "baloo";
+}
+
+/*# sourceMappingURL=style.css.map */

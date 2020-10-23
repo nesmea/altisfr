@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <div class="navbar-brand d-flex flex-row" id="header_logo">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="landmark" class="svg_total svg-inline--fa fa-landmark fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M501.62
+                                92.11L267.24 2.04a31.958 31.958 0 0 0-22.47 0L10.38 92.11A16.001 16.001 0 0 0 0 107.09V144c0 8.84 7.16 16 16 16h480c8.84 0 16-7.16 16-16v-36.91c0-6.67-4.14-12.64-10.38-14.98zM64
+                                192v160H48c-8.84 0-16 7.16-16 16v48h448v-48c0-8.84-7.16-16-16-16h-16V192h-64v160h-96V192h-64v160h-96V192H64zm432 256H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h480c8.84
+                                0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"></path></svg>
+                    <div class="sepa-nav"></div>
+                    <div class="ml-3" id="navbar-title"><p>GOUVERNEMENT</p></div>
+                </div>
+                <div class="d-flex flex-row" id="header_nav">
+                    <a href="../index.html" class="a-nav">ACCUEIL</a>
+                    <div class="sepa-nav"></div>
+                    <div class="dropdown" id="contacter">
+                        <a class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            CONTACTER
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="contacter/index.html">Créer</a>
+                            <a class="dropdown-item" href="#">Envoyés</a>
+                        </div>
+                    </div>
+                    <div class="sepa-nav"></div>
+                    <img src="../img/32x32.png" alt="" id="imageProfil" style="width:32px; height:32px;">
+                    <svg id="flecheprofil" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="angle-right" class="svg-inline--fa fa-angle-right fa-w-8" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><path fill="currentColor" d="M224.3
+                            273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
+                    <a href="" id="se-deco">Se déconnecter</a>
+                </div>
+            </nav>
+            <div id="border-nav"></div>
+        </header>
+
+        <div id="btn-retour">
+            <a href="../index.html"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-alt-circle-left" id="retour_site_intranet" class="svg-inline--fa fa-arrow-alt-circle-left fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 504C119 504 8 393
+                        8 256S119 8 256 8s248 111 248 248-111 248-248 248zm116-292H256v-70.9c0-10.7-13-16.1-20.5-8.5L121.2 247.5c-4.7 4.7-4.7 12.2 0 16.9l114.3 114.9c7.6 7.6 20.5 2.2 20.5-8.5V300h116c6.6 0 12-5.4 12-12v-64c0-6.6-5.4-12-12-12z"></path></svg></a>
+        </div>
+
+        <div class="row d-flex m-auto" id="partie-centrale">
+            <div class="row d-flex flex-row col-12" id="header_message">
+                <div class="container col-8 d-flex flex-column" id="coord">
+                    <div class="col-12 d-flex flex-row mt-3">
+                        <p id="title_player_name">Nom: </p>
+                        <p id="player_name">Marius Falone</p>
+                    </div>
+                    <div class="col-12 d-flex flex-row">
+                        <p id="title_player_phone">Téléphone: </p>
+                        <p id="player_phone">202020</p>
+                    </div>
+                </div>
+                <div class="container col-4 d-flex" id="statut">
+                    <p id="statut_message_ferme">FERMÉ</p>
+                    <!--<p id="statut_message_ouvert">OUVERT</p>
+                    <p id="statut_message_repondu">RÉPONDU</p>-->
+                </div>
+            </div>
+            <hr>
+            <div class="container d-flex flex-row" id="div_objet">
+                <p id="title_objet_message">Objet: </p>
+                <span>Bite</span>
+            </div>
+            <div class="container" id="corps_message">
+                <p id="message">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+                    demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
+                    and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness
+                    of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple
+                    and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents
+                    our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain
+                    circumstances and owing to the claims of duty or the obligations of business it will frequently occur that
+                    pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters
+                    to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures
+                    pains to avoid worse pains.</p>
+            </div>
+            <hr>
+            <form class="w-100 m-3">
+                <div class="form-group">
+                    <label>Votre message</label>
+                    <textarea class=" form-control" rows="3"></textarea>
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary mb-3" type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+
+        <footer class="page-footer font-small">
+            <div class="container-fluid contour_rgb" id="contour-footer"></div>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="http://altisfr.fr/"> AltisFR</a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready(function () {
+
+                $("#se-deco").hide();
+                $("#imageProfil").show();
+
+                $('#imageProfil').click(function () {
+                    $("#se-deco").toggle("slide");
+                    console.log($("#flecheprofil").css('transform'));
+                    if ($("#flecheprofil").css('transform') == 'none') {
+                        $("#flecheprofil").css({'transform': 'rotate(-180deg)'});
+                    } else {
+                        $("#flecheprofil").css({'transform': ''});
+                    };
+                });
+                $('.table').DataTable({ // tableau user list
+                    "language": {
+                        "lengthMenu": "Affiché _MENU_ résultats par page",
+                        "zeroRecords": "Aucun résultat",
+                        "info": "Page _PAGE_ sur _PAGES_",
+                        "infoEmpty": "Aucun utilisateurs",
+                        "loadingRecords": "Chargement...",
+                        "processing": "En traitement...",
+                        "search": "Rechercher:",
+                        "paginate": {
+                            "first": "Première",
+                            "last": "Dernière",
+                            "next": "Suivant",
+                            "previous": "Retour"
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

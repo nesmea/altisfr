@@ -1,0 +1,18 @@
+{
+  "name": "intranet",
+  "version": "1.0.0",
+  "description": "Intranet ALTISFR",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/main.scss css/style.css",
+    "gouv": "sass --watch gouv/sass/style.scss gouv/css/style.css",
+    "contact-gouv": "sass --watch gouv/contacter/sass/style.scss gouv/contacter/css/style.css",
+    "sheriff": "sass --watch sheriff/sass/style.scss sheriff/css/style.css",
+    "tickets": "sass --watch gouv/suivi/sass/style.scss gouv/suivi/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3"
+  }
+}
